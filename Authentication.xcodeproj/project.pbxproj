@@ -10,6 +10,11 @@
 		558AD4701E52A74500E36FFA /* Authentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 558AD4661E52A74500E36FFA /* Authentication.framework */; };
 		558AD4751E52A74500E36FFA /* AuthenticationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4741E52A74500E36FFA /* AuthenticationTests.swift */; };
 		558AD4771E52A74500E36FFA /* Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = 558AD4691E52A74500E36FFA /* Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558AD4811E52AB6500E36FFA /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4801E52AB6500E36FFA /* Authentication.swift */; };
+		558AD4841E52AC9300E36FFA /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4831E52AC9300E36FFA /* LoginResult.swift */; };
+		558AD4861E52ACF300E36FFA /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4851E52ACF300E36FFA /* UserCredentials.swift */; };
+		558AD4891E52B45200E36FFA /* AuthenticationMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4881E52B45200E36FFA /* AuthenticationMockService.swift */; };
+		558AD48C1E52B6DB00E36FFA /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD48B1E52B6DB00E36FFA /* Authenticator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		558AD46F1E52A74500E36FFA /* AuthenticationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		558AD4741E52A74500E36FFA /* AuthenticationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTests.swift; sourceTree = "<group>"; };
 		558AD4761E52A74500E36FFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		558AD4801E52AB6500E36FFA /* Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		558AD4831E52AC9300E36FFA /* LoginResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		558AD4851E52ACF300E36FFA /* UserCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
+		558AD4881E52B45200E36FFA /* AuthenticationMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationMockService.swift; sourceTree = "<group>"; };
+		558AD48B1E52B6DB00E36FFA /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +81,12 @@
 		558AD4681E52A74500E36FFA /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				558AD48A1E52B6D000E36FFA /* Logic */,
+				558AD4871E52B43B00E36FFA /* Service */,
+				558AD4821E52AC8000E36FFA /* Model */,
 				558AD4691E52A74500E36FFA /* Authentication.h */,
 				558AD46A1E52A74500E36FFA /* Info.plist */,
+				558AD4801E52AB6500E36FFA /* Authentication.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -84,6 +98,31 @@
 				558AD4761E52A74500E36FFA /* Info.plist */,
 			);
 			path = AuthenticationTests;
+			sourceTree = "<group>";
+		};
+		558AD4821E52AC8000E36FFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				558AD4831E52AC9300E36FFA /* LoginResult.swift */,
+				558AD4851E52ACF300E36FFA /* UserCredentials.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		558AD4871E52B43B00E36FFA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				558AD4881E52B45200E36FFA /* AuthenticationMockService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		558AD48A1E52B6D000E36FFA /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				558AD48B1E52B6DB00E36FFA /* Authenticator.swift */,
+			);
+			name = Logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +188,7 @@
 					558AD4651E52A74500E36FFA = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = J5FQP62JU5;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					558AD46E1E52A74500E36FFA = {
@@ -198,6 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				558AD48C1E52B6DB00E36FFA /* Authenticator.swift in Sources */,
+				558AD4841E52AC9300E36FFA /* LoginResult.swift in Sources */,
+				558AD4891E52B45200E36FFA /* AuthenticationMockService.swift in Sources */,
+				558AD4811E52AB6500E36FFA /* Authentication.swift in Sources */,
+				558AD4861E52ACF300E36FFA /* UserCredentials.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +367,7 @@
 		558AD47B1E52A74500E36FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J5FQP62JU5;
@@ -334,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Naranjo.Authentication;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +388,7 @@
 		558AD47C1E52A74500E36FFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = J5FQP62JU5;
@@ -360,6 +408,7 @@
 		558AD47E1E52A74500E36FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = J5FQP62JU5;
 				INFOPLIST_FILE = AuthenticationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +421,7 @@
 		558AD47F1E52A74500E36FFA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = J5FQP62JU5;
 				INFOPLIST_FILE = AuthenticationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
