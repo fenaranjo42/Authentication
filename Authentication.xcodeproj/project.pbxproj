@@ -15,6 +15,7 @@
 		558AD4861E52ACF300E36FFA /* UserCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4851E52ACF300E36FFA /* UserCredentials.swift */; };
 		558AD4891E52B45200E36FFA /* AuthenticationMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD4881E52B45200E36FFA /* AuthenticationMockService.swift */; };
 		558AD48C1E52B6DB00E36FFA /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD48B1E52B6DB00E36FFA /* Authenticator.swift */; };
+		558AD48E1E53E9CF00E36FFA /* AuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558AD48D1E53E9CF00E36FFA /* AuthenticatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		558AD4851E52ACF300E36FFA /* UserCredentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCredentials.swift; sourceTree = "<group>"; };
 		558AD4881E52B45200E36FFA /* AuthenticationMockService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationMockService.swift; sourceTree = "<group>"; };
 		558AD48B1E52B6DB00E36FFA /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		558AD48D1E53E9CF00E36FFA /* AuthenticatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				558AD4741E52A74500E36FFA /* AuthenticationTests.swift */,
 				558AD4761E52A74500E36FFA /* Info.plist */,
+				558AD48D1E53E9CF00E36FFA /* AuthenticatorTests.swift */,
 			);
 			path = AuthenticationTests;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				558AD4751E52A74500E36FFA /* AuthenticationTests.swift in Sources */,
+				558AD48E1E53E9CF00E36FFA /* AuthenticatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +454,7 @@
 				558AD47C1E52A74500E36FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		558AD47D1E52A74500E36FFA /* Build configuration list for PBXNativeTarget "AuthenticationTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +463,7 @@
 				558AD47F1E52A74500E36FFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
